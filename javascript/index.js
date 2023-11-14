@@ -17,6 +17,14 @@ let romeTime = moment().tz("Europe/Rome");
 romeDateElement.innerHTML = romeTime.format("MMMM D, YYYY");
 romeTimeElement.innerHTML = romeTime.format("h:mm:ss [<small>]A[</small>] ");
 }
+let indianapolisElement= document.querySelector("#indianapolis");
+if (indianapolisElement){
+let indianapolisDateElement = indianapolisElement.querySelector(".date");
+let indianapolisTimeElement = indianapolisElement.querySelector(".time");
+let indianapolisTime = moment().tz("America/Indiana/Indianapolis");
+indianapolisDateElement.innerHTML = indianapolisTime.format("MMMM D, YYYY");
+indianapolisTimeElement.innerHTML = indianapolisTime.format("h:mm:ss [<small>]A[</small>] ");
+}
 }
 }
 function updateCity(event) {
